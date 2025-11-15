@@ -1,1 +1,1 @@
-arr
+int totpairs =0;

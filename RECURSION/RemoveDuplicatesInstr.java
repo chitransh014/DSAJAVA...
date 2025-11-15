@@ -16,7 +16,7 @@ public class RemoveDuplicatesInstr {
         }
     }
     public static void main(String[] args) {
-        String str="nikhilverma";
+        String str="abcabcbb";
         RemoveDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
     }
 }

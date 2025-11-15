@@ -7,6 +7,7 @@ public class Hierarchial {
         Bird smallBird=new Bird();
         dog.eats();
         dolphin.swim();
+        dolphin.eats();
         smallBird.fly();
 
 

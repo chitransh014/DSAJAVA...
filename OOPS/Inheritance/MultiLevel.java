@@ -7,7 +7,7 @@ public class MultiLevel {
         Dog lucy =new Dog();
         lucy.eat();
         lucy.legs=4;
-        System.err.println(lucy.legs);
+        System.out.println(lucy.legs);
         lucy.breed="indian";
         System.out.println(lucy.breed);
     }

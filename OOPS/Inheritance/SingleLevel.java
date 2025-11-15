@@ -11,7 +11,6 @@ public class SingleLevel {
     }
     
 }
-
 //       THIS IS A BASE CLASS
 class Animal{
     String color;

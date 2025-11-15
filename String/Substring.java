@@ -11,6 +11,6 @@ public class Substring {
     }
     public static void main(String[] args) {
         String str= "NIKHILVERMA";
-        Sub_String(str, 0, 11);
+        Sub_String(str, 0, 10);
     }
 }

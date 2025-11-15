@@ -16,7 +16,7 @@ public class SortedRotatedArray {
         // mid on Line 1
         if (arr[si] <= arr[mid]) {
             // case a:left
-            if (arr[si] <= tar && tar <= arr[mid]) {
+            if (arr[si] <= tar && tar < arr[mid]) {
                 return Search(arr, si, mid - 1, tar);
             } else {
                 // case b:right
@@ -27,7 +27,7 @@ public class SortedRotatedArray {
         // mid on L2
         else {
             // case c: right
-            if (arr[mid] <= tar && tar <= arr[ei]) {
+            if (arr[mid] < tar && tar <= arr[ei]) {
                 return Search(arr, mid + 1, ei, tar);
             } else {
                 // case d:left
@@ -37,8 +37,8 @@ public class SortedRotatedArray {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 2, 4, 5, 6, 0, 10, 8, 9 };
-        int target = 7; // output
+        int arr[] = { 2, 4, 5, 0 , 10, 8, 9 };
+        int target = 10; // output
         int tarindx = Search(arr, 0, arr.length - 1, target);
         System.out.println(tarindx);
     }
